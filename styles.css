@@ -1,0 +1,27 @@
+.color {
+  height: 250px;
+  width: 250px;
+  margin: auto;
+  background-color: black;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: left;
+  width: 250px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+}
+
+.flex {
+  display: flex;
+}
+
+input {
+  height: 50px;
+  width: 50px;
+}
+
+.colorselect {
+  font-weight: 700;
+}

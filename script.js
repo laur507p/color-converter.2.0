@@ -31,7 +31,7 @@ function showSelectedColor(hex) {
   const cssOutput = getCss(hex);
   console.log(cssOutput);
 }
-
+x;
 // functions to get each value and get output
 
 function getRgb(hex) {
@@ -45,7 +45,6 @@ function getRgb(hex) {
 
 function getCss(hex) {
   const css = rgbToCss(hex);
-  console.log(css);
   return css;
 }
 
@@ -54,6 +53,7 @@ function getHsl(hex) {
   const h = hsl.h.toString().substring(0, 3);
   const s = hsl.s.toString().substring(0, 2);
   const l = hsl.l.toString().substring(0, 2);
+
   const displayHsl = "HSL: " + h + ", " + s + "% " + l + "%";
   return displayHsl;
 }

@@ -44,11 +44,15 @@ function showCss(hex) {
 
 function showHsl(hex) {
   const hsl = rgbToHsl(hex);
-  const h = hsl.h.toString().substring(0, 3);
-  const s = hsl.s.toString().substring(0, 2);
-  const l = hsl.l.toString().substring(0, 2);
+  const h = hsl.h;
+  const s = hsl.s;
+  const l = hsl.l;
 
-  const displayHsl = "HSL: " + h + ", " + s + "% " + l + "%";
+  const hR = Math.round(h);
+  const sR = Math.round(s);
+  const lR = Math.round(l);
+
+  const displayHsl = "HSL: " + hR + ", " + lR + "% " + sR + "%";
   document.querySelector(".hsl").textContent = displayHsl;
 }
 

@@ -20,15 +20,15 @@ function showColorBox(color) {
 
 // Delegating function
 function showSelectedColor(hex) {
-  getRgb(hex);
-  getCss(hex);
-  getHsl(hex);
+  showRgb(hex);
+  showCss(hex);
+  showHsl(hex);
   document.querySelector(".hex").textContent = "HEX: " + hex;
 }
 
 // functions to get each value and displays values
 
-function getRgb(hex) {
+function showRgb(hex) {
   const rgb = hexToRgb(hex);
   const r = rgb.r;
   const g = rgb.g;
@@ -37,12 +37,12 @@ function getRgb(hex) {
   document.querySelector(".rgb").textContent = displayRgb;
 }
 
-function getCss(hex) {
+function showCss(hex) {
   const css = rgbToCss(hex);
   console.log(css);
 }
 
-function getHsl(hex) {
+function showHsl(hex) {
   const hsl = rgbToHsl(hex);
   const h = hsl.h.toString().substring(0, 3);
   const s = hsl.s.toString().substring(0, 2);
